@@ -19,10 +19,10 @@ export default function Home() {
 
   return (
     <>
-      <NavBar />
+      {/* <NavBar />
  
 
-    <Carousel images={images} autoplayInterval={3000} />
+    <Carousel images={images} autoplayInterval={3000} /> */}
 
 
       <Box
@@ -32,6 +32,7 @@ export default function Home() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+        
         }}
       >
         <Avatar
@@ -87,6 +88,7 @@ export default function Home() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
+        
         }}
       >
         <Avatar
@@ -198,8 +200,8 @@ export default function Home() {
           </Box>
         </Box>
       </Box>
-      <Service />
-      <Box sx={{
+      {/* <Service /> */}
+      {/* <Box sx={{
         backgroundColor:" rgb(209, 209, 209)",
         height:"440px",
         paddingTop:"10px",
@@ -207,7 +209,7 @@ export default function Home() {
       }}>
       <Footer/>
 
-      </Box>
+      </Box> */}
     </>
   );
 }

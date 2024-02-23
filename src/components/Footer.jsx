@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 import "./Footer.css";
+import logo from "../assets/cropped-logo16032022_300x300.png";
+
 import img1 from '../assets/clientimg.png';
 import img2 from '../assets/clientimg2.png';
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp, FaRegEnvelope } from "react-icons/fa";
 import { IoMdTimer, IoIosCall } from "react-icons/io";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { Service } from './service';
+import { Box, Button, TextField, Typography } from "@mui/material";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import CallIcon from "@mui/icons-material/Call";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 export default function Footer() {
   const [currentSetIndex, setCurrentSetIndex] = useState(0);
@@ -48,7 +55,7 @@ export default function Footer() {
       <footer>
         <div className="footer-container-box">
           <div className="footer-container-box-1">
-            <img src={""} />
+            <img src={logo} />
             <h2 style={{ color: "rgb(27, 182, 238)" }}>PREDCISION ROOF MAKERS</h2>
             <div className="social-media-icon">
               <FaFacebook />
@@ -75,29 +82,137 @@ export default function Footer() {
              
             </div>
   
-            <div className="footer-container1-sub-box-3">
+            <div className="footer-container1-sub-box-1">
               <h5>Contact us</h5>
-              <div className="contact-input-box">
-                <span>
-                  <FaRegEnvelope />
-                </span>
+              <Box
+                    sx={{
+                        display: "flex",
+                        justifyContent: "start",
+                        alignItems: "start",
+                        gap: "10px",
+                        
+                    }}
+                >
+                    <LocationOnIcon
+                        sx={{
+                            fontSize: "25px",
+                            color: "#1976d2!important",
+                        }}
+                    />
+                    <Typography
+                        sx={{
+                            fontSize: "14px",
+                            fontWeight: "700",
+                            color: "grey",
+                        }}
+                    >
+                        PRECISION ROOF MAKERS For Turnkey Projects Contracting
+                        <Typography
+                        sx={{
+                            padding:"5px 0",
+                            fontSize: "14px",
+                           
+                            color: "grey",
+                        }}
+                    >
+                         P.O Box: 33262, Al Karama, Near Central Post Office,
+                        
+                       
+                    </Typography>
+                    <Typography
+                        sx={{
+                           
+                            fontSize: "14px",
+                           
+                            color: "grey",
+                        }}
+                    >
+                         
+                        Dubai, United Arab Emirates
+                       
+                    </Typography>
 
-                <input type="text" placeholder="Enter your name" />
-              </div>
-              <div className="contact-input-box">
-                <span>
-                  <IoIosCall />
-                </span>
+                       
+                    </Typography>
+                 
 
-                <input type="text" placeholder="Enter your number" />
-              </div>
-              <div className="contact-input-box">
-                <span>
-                  <IoMdTimer />
-                </span>
-
-                <input type="text" placeholder="Enter your message" />
-              </div>
+                   
+                </Box>
+                {/* Phone */}
+                <Box
+                    sx={{
+                        display: "flex",
+                        justifyContent: "start",
+                        alignItems: "center",
+                        gap: "10px",
+                    }}
+                >
+                    <CallIcon
+                        sx={{
+                            fontSize: "25px",
+                            color: "#1976d2!important",
+                        }}
+                    />
+                    <Typography
+                        sx={{
+                            fontSize: "14px",
+                            fontWeight: "700",
+                            color: "grey",
+                        }}
+                    >
+                        +971 524 022 744, +971 52 450 4254
+                    </Typography>
+                </Box>
+                {/* Email */}
+                <Box
+                    sx={{
+                        display: "flex",
+                        justifyContent: "start",
+                        alignItems: "center",
+                        gap: "10px",
+                    }}
+                >
+                    <MailOutlineIcon
+                        sx={{
+                            fontSize: "25px",
+                            color: "#1976d2!important",
+                        }}
+                    />
+                    <Typography
+                        sx={{
+                            fontSize: "14px",
+                            fontWeight: "700",
+                            color: "grey",
+                        }}
+                    >
+                        admin@precisionroofmakers.com
+                    </Typography>
+                </Box>
+                {/* Office Hours */}
+                <Box
+                    sx={{
+                        display: "flex",
+                        justifyContent: "start",
+                        alignItems: "center",
+                        gap: "10px",
+                    }}
+                >
+                    <AccessTimeIcon
+                        sx={{
+                            fontSize: "25px",
+                            color: "#1976d2!important",
+                        }}
+                    />
+                    <Typography
+                        sx={{
+                            fontSize: "14px",
+                            fontWeight: "700",
+                            color: "grey",
+                        }}
+                    >
+                        Mon-Fri: | 09:00 - 17:00
+                    </Typography>
+                </Box>
             </div>
           </div>
         </div>
