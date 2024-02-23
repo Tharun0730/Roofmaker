@@ -1,0 +1,85 @@
+.navbar-wrapper {
+  background: rgb(223, 223, 223);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  /* backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px); */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.services-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 28%;
+  background-color: black;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid black;
+  z-index: 999;
+ 
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.projects-dropdown {
+    display: none;
+    position: absolute;
+ 
+
+    top: 100%;
+    left: 50%;
+    background-color: black;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid black;
+    z-index: 999;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+}
+.projects-menu , .services-menu{
+    display: flex;
+
+  align-items: center;
+  justify-content: center;
+    height: 50px;
+}
+
+.typography-menu {
+  position: relative; 
+}
+
+.typography-menu::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: transparent;
+  transition: width 0.3s ease; /* Add transition effect */
+}
+
+.typography-menu:hover::after {
+  width: 100%; /* Expand the border on hover */
+  background-color: skyblue; /* Change the color of the border */
+}
+
+
+.projects-menu:hover .projects-dropdown {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.services-menu:hover .services-dropdown{
+    display: none;
+}
+.services-dropdown > *,
+.projects-dropdown > * {
+  transition: color 0.3s ease;
+}
+
+.services-dropdown > *:hover,
+.projects-dropdown > *:hover {
+  color: skyblue;
+}
