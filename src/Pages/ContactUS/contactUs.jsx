@@ -3,6 +3,7 @@ import ContactUS from "../../components/form";
 import NavBar from "../../components/navBar";
 import Footer from "../../components/Footer";
 
+
 export default function ContactPage (){
     return(
 <>
@@ -12,7 +13,7 @@ export default function ContactPage (){
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
-          padding: "50px 20px",
+          padding:  {xs:"50px 20px 10px 20px",lg:"50px 20px"} ,
           marginTop:"130px",
           gap: "10px",
         }}
@@ -20,14 +21,14 @@ export default function ContactPage (){
         <Typography
           variant="p"
           sx={{
-            fontSize: "35px",
+            fontSize: {xs:"20px",lg:"35px"},
             fontWeight: "bolder",
             color: "gray",
           }}
         >
-          Contact Us
+          Contact US
         </Typography>
-        <Box sx={{ border: "1px solid gray", width: "80%" }}></Box>
+        <Box sx={{ border: "2px solid gray", width: {xs:"70%",sm:"80%"} }}></Box>
       </Box>
 <Box   >
 <ContactUS/>

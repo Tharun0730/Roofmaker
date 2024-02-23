@@ -26,7 +26,7 @@ export default function About() {
           display: "flex",
           justifyContent: "start",
           alignItems: "center",
-          padding: "50px 20px",
+          padding:  {xs:"50px 20px 10px 20px",lg:"50px 20px"} ,
           marginTop:"130px",
           gap: "10px",
         }}
@@ -34,30 +34,34 @@ export default function About() {
         <Typography
           variant="p"
           sx={{
-            fontSize: "35px",
+            fontSize: {xs:"20px",lg:"35px"},
             fontWeight: "bolder",
             color: "gray",
           }}
         >
           About US
         </Typography>
-        <Box sx={{ border: "2px solid gray", width: "80%" }}></Box>
+        <Box sx={{ border: "2px solid gray", width: {xs:"70%",sm:"80%"} }}></Box>
       </Box>
       <Box
         sx={{
           display: "flex",
           justifyContent: "center",
-          paddingBottom:"100px",
+          flexWrap:"wrap",
+         
+          padding:{xs:"30px",lg:"0 0 100px 0"},
           alignItems: "center",
          height:"auto",
           width: "100%",
+          gap:{xs:"30px",md:"0"}
        
         }}
       >
         <Box
           sx={{
-            width: "30% ",
-            height: "600px",
+            width: {xs:"100%",sm:"100%",md:"30%"},
+            
+            height:{xs:"auto",md: "600px"},
             backgroundColor: "#EEEEEE",
           }}
         >
@@ -259,10 +263,11 @@ export default function About() {
             justifyContent: "start",
             alignItems: "start",
             flexDirection: "column",
-            width: "50%",
-            height: "600px",
+            width: {xs:"100%",sm:"100%",md:"50%"},
+            height:{xs:"auto",md: "600px"},
+            padding:{xs:"0px 20px",lg:"0 50px"},
             gap: "10px",
-            padding:"0 50px"
+         
           }}
         >
           <Typography
@@ -282,7 +287,7 @@ export default function About() {
 
 Our commitment to quality extends from the initial consultation to the final installation. With a focus on understanding your unique requirements, we deliver tailored solutions that align perfectly with your vision and objectives. Backed by a team of skilled professionals, we guarantee precision, expertise, and reliability in every aspect of our work.
 
-As you explore our range of services, you'll discover a world of quality, reliability, and personalized attention. We invite you to experience the difference with us and embark on a journey of unparalleled service and satisfaction.
+As you explore our range of services, you'll discover a world of quality, reliability, and personalized attention.
           
           
           </Typography>

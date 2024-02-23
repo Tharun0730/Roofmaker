@@ -107,18 +107,7 @@ export default function Footer() {
                         }}
                     >
                         PRECISION ROOF MAKERS For Turnkey Projects Contracting
-                        <Typography
-                        sx={{
-                            padding:"5px 0",
-                            fontSize: "14px",
-                           
-                            color: "grey",
-                        }}
-                    >
-                         P.O Box: 33262, Al Karama, Near Central Post Office,
-                        
-                       
-                    </Typography>
+                     
                     <Typography
                         sx={{
                            
