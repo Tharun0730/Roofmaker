@@ -21,14 +21,35 @@ export default function About() {
   return (
     <>
       <NavBar />
-      <Carousel images={images} autoplayInterval={3000} />
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "start",
+          alignItems: "center",
+          padding: "50px 20px",
+          marginTop:"130px",
+          gap: "10px",
+        }}
+      >
+        <Typography
+          variant="p"
+          sx={{
+            fontSize: "35px",
+            fontWeight: "bolder",
+            color: "gray",
+          }}
+        >
+          About US
+        </Typography>
+        <Box sx={{ border: "2px solid gray", width: "80%" }}></Box>
+      </Box>
       <Box
         sx={{
           display: "flex",
           justifyContent: "center",
-          
+          paddingBottom:"100px",
           alignItems: "center",
-          height: "600px",
+         height:"auto",
           width: "100%",
        
         }}
@@ -36,7 +57,7 @@ export default function About() {
         <Box
           sx={{
             width: "30% ",
-            height: "500px",
+            height: "600px",
             backgroundColor: "#EEEEEE",
           }}
         >
@@ -48,7 +69,7 @@ export default function About() {
               color: "#333333",
             }}
           >
-            Our Service
+             Service
           </Typography>
 
           <Box
@@ -58,7 +79,7 @@ export default function About() {
               alignItems: "center",
               gap: "30px",
               margin: "20px",
-              borderBottom: "1px solid",
+              borderBottom: "1px solid #ddd",
               padding: "10px",
             }}
           >
@@ -88,7 +109,7 @@ export default function About() {
               alignItems: "center",
               gap: "30px",
               margin: "20px",
-              borderBottom: "1px solid grey",
+              borderBottom: "1px solid #ddd grey",
               padding: "10px",
             }}
           >
@@ -118,7 +139,7 @@ export default function About() {
               alignItems: "center",
               gap: "30px",
               margin: "20px",
-              borderBottom: "1px solid",
+              borderBottom: "1px solid #ddd",
               padding: "10px",
             }}
           >
@@ -148,7 +169,7 @@ export default function About() {
               alignItems: "center",
               gap: "30px",
               margin: "20px",
-              borderBottom: "1px solid",
+              borderBottom: "1px solid #ddd",
               padding: "10px",
             }}
           >
@@ -178,7 +199,7 @@ export default function About() {
               alignItems: "center",
               gap: "30px",
               margin: "20px",
-              borderBottom: "1px solid",
+              borderBottom: "1px solid #ddd",
               padding: "10px",
             }}
           >
@@ -201,6 +222,36 @@ export default function About() {
               Consulting
             </Typography>
           </Box>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "start",
+              alignItems: "center",
+              gap: "30px",
+              margin: "20px",
+              borderBottom: "1px solid #ddd",
+              padding: "10px",
+            }}
+          >
+            <Avatar
+              src={aboutimg1}
+              sx={{
+                height: "35px",
+                width: "35px",
+              }}
+              variant="square"
+            ></Avatar>
+            <Typography
+              sx={{
+                fontSize: "16px",
+                fontWeight: "bolder",
+
+                color: "gray",
+              }}
+            >
+              &More Service...
+            </Typography>
+          </Box>
         </Box>
         <Box
           sx={{
@@ -209,7 +260,7 @@ export default function About() {
             alignItems: "start",
             flexDirection: "column",
             width: "50%",
-            height: "500px",
+            height: "600px",
             gap: "10px",
             padding:"0 50px"
           }}
@@ -242,7 +293,15 @@ As you explore our range of services, you'll discover a world of quality, reliab
      
         </Box>
       </Box>
+      <Box sx={{
+        backgroundColor:" rgb(209, 209, 209)",
+        height:"440px",
+        paddingTop:"10px",
+        width:"100%",
+      }}>
       <Footer/>
+
+      </Box>
     </>
   );
 }

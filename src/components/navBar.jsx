@@ -120,6 +120,7 @@ navigate(path)
               fontWeight: '500',
             }}
             variant="p"
+            onClick={()=>{handleNav("/service")}}
           >
             Our Services
             {/* Our Services <ArrowDropDownIcon /> */}
@@ -205,7 +206,7 @@ navigate(path)
           
               sx={{
                 
-                color: 'black',
+                color: 'white',
                 cursor: 'pointer',
                 width: '100%',
                 padding: '6px',
@@ -223,7 +224,7 @@ navigate(path)
             <Typography
            
               sx={{
-                color: 'black',
+                color: 'white',
                 cursor: 'pointer',
                 width: '100%',
                 padding: '6px',
@@ -241,7 +242,7 @@ navigate(path)
             <Typography
          
               sx={{
-                color: 'black',
+                color: 'white',
                 cursor: 'pointer',
                 width: '100%',
                 padding: '6px',
@@ -259,6 +260,7 @@ navigate(path)
           </div>
         </div>
         <Typography
+        onClick={()=>{handleNav("/contactus")}}
             className="typography-menu"
           sx={{
             color: 'black',
@@ -270,6 +272,7 @@ navigate(path)
             fontWeight: '500',
           }}
           variant="p"
+          
         >
           Contact Us
         </Typography>
