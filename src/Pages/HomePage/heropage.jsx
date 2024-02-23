@@ -12,12 +12,15 @@ import Footer from "../../components/Footer";
 
 export default function Home() {
 
-  const images = [ Background, slider2, slider3]
+  const images = [
+    { image: slider2, text: "ROOFING & CLADDING INSTALLERS" },
+    { image: slider3, text: "STANDING SEAM INSTALLER" },
+    { image: Background, text: "ROOF WALKWAY AND FALL ARREST INSTALLERS" },]
 
   return (
     <>
       <NavBar />
-
+ 
 
     <Carousel images={images} autoplayInterval={3000} />
 

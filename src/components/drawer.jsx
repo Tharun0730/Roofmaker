@@ -1,90 +1,42 @@
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import Button from '@mui/material/Button';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import InboxIcon from '@mui/icons-material/MoveToInbox';
+import MailIcon from '@mui/icons-material/Mail';
+import { Typography } from '@mui/material';
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
-import { Avatar, Box, Typography } from "@mui/material";
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import logo from "../assets/cropped-logo16032022_300x300.png";
-import "../components/navbar.css";
-import QuickNavigator from "./QuickNavigator";
-import TemporaryDrawer from "./drawer";
 
-export default function NavBar() {
-    const [prevScrollPos, setPrevScrollPos] = useState(0);
-    const [visible, setVisible] = useState(true);
-    const navigate = useNavigate();
+export default function TemporaryDrawer() {
+  const [open, setOpen] = React.useState(false);
 
-    const handleNav = (path) => {
-        navigate(path);
-    };
-    useEffect(() => {
-        const handleScroll = () => {
-            const currentScrollPos = window.pageYOffset;
-            const threshold = 100;
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+  };
 
-            setVisible(
-                (prevScrollPos > currentScrollPos &&
-                    prevScrollPos - currentScrollPos > threshold) ||
-                    currentScrollPos < threshold
-            );
-            setPrevScrollPos(currentScrollPos);
-        };
-
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, [prevScrollPos, visible]);
-
-    return (
-        <Box
-            className="navbar-wrapper"
-            sx={{
-                position: "fixed",
-                top: visible ? "0" : "-100%", // Hide the navbar off-screen when not visible
-                width: "100%",
-
-                // backgroundColor: 'rgb(27, 26, 85)',
-                // backdropFilter: 'blur(5px)',
-                transition: "top 0.3s ease", // Add transition effect for smooth appearance
-                zIndex: 999,
-            }}
-        >
-       
-            <Box sx={{ display: {xs:"none" ,lg:"flex"}, justifyContent: "flex-end" }}>
-                <QuickNavigator />
-            </Box>
-
-            <Box
-                sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-
-                    padding: "5px 25px",
-                }}
-            >
-                 <TemporaryDrawer/>
-                <Avatar
-                    variant="square"
-                    sx={{
-                        objectFit: "cover",
-                        height: "150px",
-                        width: "200px",
-                    }}
-                    src={logo}
-                />
-                <Box
+  const DrawerList = (
+    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
+      <List>
+      <Box
                     sx={{
                         display: "flex",
                         justifyContent: "center",
                         alignItems: "center",
                         gap: "0px 20px",
+                        flexDirection:"column",
                         paddingTop:"30px",
                         position: "relative", // Position relative for dropdown
                     }}
                 >
                     <Typography
                         className="typography-menu"
-                        onClick={() => {
-                            handleNav("/");
-                        }}
+                     
                         sx={{
                             color: "black",
                             cursor: "pointer",
@@ -100,9 +52,7 @@ export default function NavBar() {
                     </Typography>
                     <Typography
                         className="typography-menu"
-                        onClick={() => {
-                            handleNav("/about");
-                        }}
+                       
                         sx={{
                             color: "black",
                             cursor: "pointer",
@@ -267,10 +217,7 @@ export default function NavBar() {
                         </div>
                     </div>
                     <Typography
-                     onClick={() => {
-                      handleNav("/contactus");
-                  }}
-                        className="typography-menu"
+                 className="typography-menu"
                         sx={{
                             color: "black",
                             cursor: "pointer",
@@ -285,8 +232,16 @@ export default function NavBar() {
                         Contact Us
                     </Typography>
                 </Box>
-            </Box>
-    
-        </Box>
-    );
+      </List>
+    </Box>
+  );
+
+  return (
+    <div>
+      <Button onClick={toggleDrawer(true)}>Open drawer</Button>
+      <Drawer open={open} onClose={toggleDrawer(false)}>
+        {DrawerList}
+      </Drawer>
+    </div>
+  );
 }
