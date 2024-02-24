@@ -14,7 +14,7 @@ export default function ContactPage (){
           justifyContent: "start",
           alignItems: "center",
           padding:  {xs:"50px 20px 10px 20px",lg:"50px 20px"} ,
-          marginTop:"130px",
+          marginTop:"14rem",
           gap: "10px",
         }}
       >

@@ -71,19 +71,19 @@ export default function Footer() {
                 <MdArrowForwardIos /> Home
               </span>
               <span className="footer-span">
-                <MdArrowForwardIos /> About us
+                <MdArrowForwardIos /> About Us
               </span>
               <span className="footer-span">
-                <MdArrowForwardIos /> Our Service
+                <MdArrowForwardIos /> Our Services
               </span>
               <span className="footer-span">
-                <MdArrowForwardIos /> Project
+                <MdArrowForwardIos /> Projects
               </span>
              
             </div>
   
             <div className="footer-container1-sub-box-1">
-              <h5>Contact us</h5>
+              <h5>Contact Us</h5>
               <Box
                     sx={{
                         display: "flex",
@@ -117,7 +117,7 @@ export default function Footer() {
                         }}
                     >
                          
-                        Dubai, United Arab Emirates
+                        Al Nahda 2, Dubai, United Arab Emirates
                        
                     </Typography>
 

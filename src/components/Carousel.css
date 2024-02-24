@@ -18,16 +18,35 @@
   flex: 0 0 100%;
   height: 100vh;
   transition: transform 0.8s ease;
-  position: relative; /* Add position relative to position the text */
+  position: relative;
   display: flex;
-  justify-content: center; /* Center the text horizontally */
-  align-items: center; /* Center the text vertically */
-  text-align: center; /* Center the text within the slide */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  color: #3572db;
+  /* background: linear-gradient(300deg, #1f4890 0%, #3a84de 74%); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  /* background-clip: text;  */
+  /* color: transparent; Standard property */
 }
 
-.carousel-slide .slide-text {
+/* Fallback color for non-supporting browsers */
+.carousel-slide::after {
+  content: "Your fallback text";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #3572db; /* Fallback color */
+  z-index: -1; /* Behind the text */
+}
+
+
+.slide-text {
   color: white; /* Color of the text */
-  font-size: 4rem; /* Font size of the text */
   z-index: 2; /* Ensure text is above the image */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
   position: absolute; /* Position text absolutely */
@@ -38,7 +57,7 @@
 
 .carousel-slide img {
   width: 100%;
-  height: 100%;
+  height: 68%;
   opacity: 0.8;
   object-fit: cover;
 }
