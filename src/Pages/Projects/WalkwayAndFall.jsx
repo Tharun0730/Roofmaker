@@ -1,18 +1,18 @@
 import React from 'react'
 import ProjectCardDetails from '../../components/ProjectCardDetails';
-import Containerimg1 from '../../assets/container1img.jpg'
+import Containerimg1 from '../../assets/FALL ARREST SYSTEM/FALL ARREST SYSTEM 1.jpg'
 import NavBar from '../../components/navBar';
 import Footer from '../../components/Footer';
 function WalkwayAndFall() {
   const boxData = [
     {
         src: Containerimg1,
-        title: 'Walk way And Fall',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam nisi iure similique expedita harum sint voluptatum cumque culpa sunt laboriosam excepturi quae dolor nam veniam minima eos distinctio ea saepe quibusdam esse, aut commodi. Fugiat, reiciendis dicta sapiente mollitia unde voluptate officia consectetur distinctio voluptatem assumenda iste ad ducimus soluta quidem impedit.',
-        year:"2024",
-        Location:"Dubai",
-        Size:'1300ft',
-        about:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum minima praesentium est debitis incidunt facere optio nobis facilis nesciunt, officiis, consequuntur fugiat natus sit officia eum repellat sapiente sunt vitae        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum minima praesentium est debitis incidunt facere optio nobis facilis nesciunt, officiis, consequuntur fugiat natus sit officia eum repellat sapiente sunt vitae."
+        title: 'WHAT IS FALL ARREST SYSTEM ',
+         why:"WHY FALL ARREST SYSTEM AND HANDRAIL ",
+         whyans:"Roof safety systems are designed to protect workers from slips, trips and falls while working on a roof. These systems can prevent, restrain, arrest, or even eliminate the need for workers to be at heights in the first place.",
+        about:"A roof top fall arrest system designed to eliminate or substantially reduce the risk of injury and death to operatives working at height whilst ensuring the integrity of the structure to which it is attached.",
+        Guardrails:"Guardrails",
+        Guardrailsans:"Guardrail systems come in fixed and freestanding options and provide workers with a barrier between them and potential slips or falls"
     }
 
     // Add more objects as needed for additional boxes

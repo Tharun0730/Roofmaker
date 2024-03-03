@@ -1,9 +1,11 @@
 import { Avatar, Box, Grid, Typography } from "@mui/material";
-import img1 from "../assets/container1img.jpg";
-import img2 from '../assets/img2.jpg';
+import img1 from "../assets/sandwich panel/Sandwich panel roof 1.jpeg";
+import img2 from '../assets/st seam/standing-seam-roof 2.webp';
 import img3 from '../assets/img3.jpg';
-import img4 from '../assets/img4.jpg';
-import img5 from '../assets/img5.jpg';
+import img4 from '../assets/sandwich panel/image 4.webp';
+import img5 from '../assets/sandwich panel/image 3.jpg';
+import img6 from '../assets/FALL ARREST SYSTEM/FALL ARREST SYSTEM 1.jpg'
+import SandwichPanel from './../Pages/Projects/SandwichPanel';
 
 export function Service() {
   const services = [
@@ -13,7 +15,7 @@ export function Service() {
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quidem placeat quam voluptatum reprehenderit reiciendis quae distinctio. Fugit cum, nostrum maiores voluptas distinctio incidunt sed, sint impedit, officiis nisi minus!"
     },
     {
-      img: img1,
+      img: img6,
       title: "Stell Erection",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quidem placeat quam voluptatum reprehenderit reiciendis quae distinctio. Fugit cum, nostrum maiores voluptas distinctio incidunt sed, sint impedit, officiis nisi minus!"
     },

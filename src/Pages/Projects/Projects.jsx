@@ -1,39 +1,40 @@
 import { Avatar, Box, Typography } from "@mui/material";
-import Containerimg1 from "../../assets/container1img.jpg";
-import project2 from "../../assets/project1.jpg";
-import project3 from "../../assets/project2.jpg";
-import project4 from "../../assets/project3.jpg";
-import project5 from "../../assets/project5.jpg";
+import Containerimg1 from "../../assets/st seam/standing-seam-roof 2.webp";
+import project2 from "../../assets/FALL ARREST SYSTEM/fall protection-systems 2.jpg";
+import project3 from "../../assets/WALKWAYS/WALKWAY 1.webp";
+import project4 from "../../assets/sandwich panel/Sandwich panel roof 1.jpeg";
+import project5 from "../../assets/WALKWAYS/flexwalk-02.webp"
 import NavBar from './../../components/navBar';
 import Footer from './../../components/Footer';
+
 const boxData = [
   {
     src: Containerimg1,
-    title: "Various Commercial Roofing Options",
+    title: "Standing Seam ",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam nisi iure similique expedita harum sint voluptatum cumque culpa sunt laboriosam excepturi quae dolor nam veniam minima eos distinctio ea saepe quibusdam esse, aut commodi. Fugiat, reiciendis dicta sapiente mollitia unde voluptate officia consectetur distinctio voluptatem assumenda iste ad ducimus soluta quidem impedit.",
+      "tanding seam metal roofing is defined as a concealed fastener metal panel system that features vertical legs and a broad, flat area between the two legs. It’s also described as having raised seams, or vertical legs, that rise above the panel’s flat area. Standing seam systems can be used for either metal roofing or metal walls..",
   },
   {
     src: project2,
-    title: "Standing Seam",
+    title: " FALL ARREST SYSTEM ",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam nisi iure similique expedita harum sint voluptatum cumque culpa sunt laboriosam excepturi quae dolor nam veniam minima eos distinctio ea saepe quibusdam esse, aut commodi. Fugiat, reiciendis dicta sapiente mollitia unde voluptate officia consectetur distinctio voluptatem assumenda iste ad ducimus soluta quidem impedit.",
+      "A roof top fall arrest system designed to eliminate or substantially reduce the risk of injury and death to operatives working at height whilst ensuring the integrity of the structure to which it is attached..",
   },
   {
     src: project3,
-    title: "MULTI-FAMILY Roofing in Florida",
+    title: "Guardrails",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam nisi iure similique expedita harum sint voluptatum cumque culpa sunt laboriosam excepturi quae dolor nam veniam minima eos distinctio ea saepe quibusdam esse, aut commodi. Fugiat, reiciendis dicta sapiente mollitia unde voluptate officia consectetur distinctio voluptatem assumenda iste ad ducimus soluta quidem impedit.",
+      "Guardrail systems come in fixed and freestanding options and provide workers with a barrier between them and potential slips or falls.",
   },
   {
     src: project4,
-    title: "Residential Roofing in Florida",
+    title: "SanWich",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam nisi iure similique expedita harum sint voluptatum cumque culpa sunt laboriosam excepturi quae dolor nam veniam minima eos distinctio ea saepe quibusdam esse, aut commodi. Fugiat, reiciendis dicta sapiente mollitia unde voluptate officia consectetur distinctio voluptatem assumenda iste ad ducimus soluta quidem impedit.",
   },
   {
     src: project5,
-    title: "MULTI-FAMILY Roofing in Florida",
+    title: "Walk Ways",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aperiam nisi iure similique expedita harum sint voluptatum cumque culpa sunt laboriosam excepturi quae dolor nam veniam minima eos distinctio ea saepe quibusdam esse, aut commodi. Fugiat, reiciendis dicta sapiente mollitia unde voluptate officia consectetur distinctio voluptatem assumenda iste ad ducimus soluta quidem impedit.",
   },

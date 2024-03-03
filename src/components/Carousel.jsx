@@ -30,7 +30,7 @@ const Carousel = ({ images, autoplayInterval }) => {
     };
 
     return (
-        <div className='carousel-container' style={{ marginTop: '5rem' }}>
+        <div className='carousel-container' style={{ marginTop: '11rem' }}>
             <div className='carousel'>
                 <div
                     className='carousel-inner'

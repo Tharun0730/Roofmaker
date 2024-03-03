@@ -1,11 +1,12 @@
 import { Avatar, Box, Typography } from '@mui/material';
 import NavBar from '../../components/navBar';
-import Background from '../../assets/beautiful-wooden-house-with-big-windows.jpg';
-import slider2 from '../../assets/slider2.jpg';
-import slider3 from '../../assets/slider3.jpg';
-import Containerimg1 from '../../assets/container1img.jpg';
-import Containerimg2 from '../../assets/conatiner3.jpg';
-import Backscreenimg from '../../assets/Roofmaker1.jpg';
+import Background from '../../assets/FALL ARREST SYSTEM/fall protection-systems 2.jpg';
+import slider2 from '../../assets/WALKWAYS/flexwalk-02.webp';
+
+import slider3 from '../../assets/st seam/standing-seam-roof 2.webp';
+import Containerimg1 from '../../assets/st seam/seam 1.jpeg';
+import Containerimg2 from '../../assets/st seam/st seam.jpg';
+import Backscreenimg from '../../assets/WALKWAYS/flexwalk-3.webp';
 import { Service } from '../../components/service';
 import Carousel from '../../components/Carousel';
 import Footer from '../../components/Footer';
