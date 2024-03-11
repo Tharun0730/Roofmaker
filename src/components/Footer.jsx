@@ -178,30 +178,7 @@ export default function Footer() {
                     </Typography>
                 </Box>
                 {/* Office Hours */}
-                <Box
-                    sx={{
-                        display: "flex",
-                        justifyContent: "start",
-                        alignItems: "center",
-                        gap: "10px",
-                    }}
-                >
-                    <AccessTimeIcon
-                        sx={{
-                            fontSize: "25px",
-                            color: "#1976d2!important",
-                        }}
-                    />
-                    <Typography
-                        sx={{
-                            fontSize: "14px",
-                            fontWeight: "700",
-                            color: "grey",
-                        }}
-                    >
-                        Mon-Fri: | 09:00 - 17:00
-                    </Typography>
-                </Box>
+              
             </div>
           </div>
         </div>

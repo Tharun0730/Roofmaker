@@ -6,38 +6,41 @@ import img4 from '../assets/sandwich panel/image 4.webp';
 import img5 from '../assets/sandwich panel/image 3.jpg';
 import img6 from '../assets/FALL ARREST SYSTEM/FALL ARREST SYSTEM 1.jpg'
 import SandwichPanel from './../Pages/Projects/SandwichPanel';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 export function Service() {
   const services = [
     {
       img: img1,
-      title: "Stell Erection",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quidem placeat quam voluptatum reprehenderit reiciendis quae distinctio. Fugit cum, nostrum maiores voluptas distinctio incidunt sed, sint impedit, officiis nisi minus!"
+      title: "ROOFING",
+      description: "Our cladding services and see how we can make your building stand out from the crowd. Learn about our metal cladding sheets for industrial and commercial buildings"
     },
     {
       img: img6,
-      title: "Stell Erection",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quidem placeat quam voluptatum reprehenderit reiciendis quae distinctio. Fugit cum, nostrum maiores voluptas distinctio incidunt sed, sint impedit, officiis nisi minus!"
+      title: "STANDING SEAM",
+      description: "Standing seam roof panels has raised metal seams that are joined with concealed fasteners. These panels are attached to the building structure with high-strength metal clips without screws piercing through the sheets."
     },
     {
       img: img2,
-      title: "Standing Seam",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quidem placeat quam voluptatum reprehenderit reiciendis quae distinctio. Fugit cum, nostrum maiores voluptas distinctio incidunt sed, sint impedit, officiis nisi minus!"
+      title: "WALKWAY",
+      description: "Roof Walkway designs provide personnel protection from trips and falls around service equipment and parapet edges. The installation is customized to the roof layout offering unimpeded pedestrian access to congested areas."
     },
     {
       img: img3,
-      title: "Service Three",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quidem placeat quam voluptatum reprehenderit reiciendis quae distinctio. Fugit cum, nostrum maiores voluptas distinctio incidunt sed, sint impedit, officiis nisi minus!"
+      title: "FALL ARRESTER",
+      description: "Falls from height are the single biggest cause of death and one of the biggest cause of serious injury in the workplace today"
     },
     {
       img: img4,
-      title: "Service Four",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quidem placeat quam voluptatum reprehenderit reiciendis quae distinctio. Fugit cum, nostrum maiores voluptas distinctio incidunt sed, sint impedit, officiis nisi minus!"
+      title: "Sandwich-panel",
+      description: "Sandwich panels are a modular building material designed to cover buildings and structures. These panels consist of two layers that form the outer structure and ensure form, weather resistance and rigidity"
     },
     {
       img: img5,
-      title: "Service Five",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quidem placeat quam voluptatum reprehenderit reiciendis quae distinctio. Fugit cum, nostrum maiores voluptas distinctio incidunt sed, sint impedit, officiis nisi minus!"
+      title: "Maintenance Services",
+      description: "Roof maintenance, including cleaning, gutter clearance, and minor repairs, helps prolong the lifespan of the roof and ensures it performs optimally"
     }
   ];
 
@@ -51,6 +54,7 @@ export function Service() {
           alignItems: "center",
           padding:  {xs:"50px 20px 10px 20px",lg:"50px 20px"} ,
           marginTop:"13rem",
+        
           gap: "10px",
         }}
       >
@@ -70,10 +74,12 @@ export function Service() {
         {services.map((service, index) => (
           <Grid  item key={index} xs={12} sm={6} md={4} lg={4}>
             <Box
+          
               sx={{
                 display: "flex",
                 flexDirection: "column",
                 padding:"20px",
+                height:'480px',
                 minHeight: "410px",
                 boxShadow: "0px 4px 6px rgba(238, 238, 238, 1)",
               }}

@@ -16,12 +16,17 @@ import aboutimg5 from "../../assets/aboutimg5.png";
 
 import { Service } from "./../../components/service";
 import Footer from "../../components/Footer";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 export default function About() {
   const images = [Background, slider2, slider3];
   return (
     <>
       <NavBar />
       <Box
+      
         sx={{
           display: "flex",
           justifyContent: "start",
@@ -44,6 +49,7 @@ export default function About() {
         <Box sx={{ border: "2px solid gray", width: {xs:"70%",sm:"80%"} }}></Box>
       </Box>
       <Box
+      data-aos="zoom-out-right"
         sx={{
           display: "flex",
           justifyContent: "center",

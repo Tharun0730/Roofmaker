@@ -86,6 +86,7 @@ export default function Projects() {
       >
         {boxData.map((data, index) => (
           <Box
+          data-aos={index%2===0?"fade-right":"fade-left"}
             key={index}
             sx={{
               padding: {

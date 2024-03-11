@@ -12,7 +12,7 @@ function SandwichPanel() {
         year:"2024",
         Location:"Dubai",
         Size:'1300ft',
-        about:" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum minima praesentium est debitis incidunt facere optio nobis facilis nesciunt, officiis, consequuntur fugiat natus sit officia eum repellat sapiente sunt vitae        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum minima praesentium est debitis incidunt facere optio nobis facilis nesciunt, officiis, consequuntur fugiat natus sit officia eum repellat sapiente sunt vitae."
+        about:"Sandwich panels are a modular building material designed to cover buildings and structures. These panels consist of two layers that form the outer structure and ensure form, weather resistance and rigidity."
     }
 
     // Add more objects as needed for additional boxes
